@@ -9,13 +9,12 @@ const data = {
       creator: "Moonton",
       category: "game",
       currency: "Diamonds",
-      currencyIcon: "💎",
       idFields: [
         { name: "userId", label: "User ID", placeholder: "Masukkan User ID", required: true },
         { name: "zoneId", label: "Zone ID", placeholder: "Masukkan Zone ID", required: true }
       ],
       topupOptions: [
-        { id: 1, name: "86 Diamonds", price: " 20.000", bonus: "+4 Bonus" },
+        { id: 1, name: "86 Diamonds", price: "Rp 20.000", bonus: "+4 Bonus" },
         { id: 2, name: "172 Diamonds", price: "Rp 40.000", bonus: "+8 Bonus" },
         { id: 3, name: "257 Diamonds", price: "Rp 60.000", bonus: "+12 Bonus" },
         { id: 4, name: "344 Diamonds", price: "Rp 80.000", bonus: "+16 Bonus" },
@@ -35,7 +34,6 @@ const data = {
       creator: "Tencent Games",
       category: "game",
       currency: "UC",
-      currencyIcon: "🪙",
       idFields: [
         { name: "userId", label: "Player ID", placeholder: "Masukkan Player ID", required: true }
       ],
@@ -60,7 +58,6 @@ const data = {
       creator: "Garena",
       category: "game",
       currency: "Diamonds",
-      currencyIcon: "💎",
       idFields: [
         { name: "userId", label: "User ID", placeholder: "Masukkan User ID", required: true }
       ],
@@ -86,7 +83,6 @@ const data = {
       creator: "HoYoverse",
       category: "game",
       currency: "Genesis Crystal",
-      currencyIcon: "💠",
       idFields: [
         { name: "userId", label: "UID", placeholder: "Masukkan UID", required: true },
         { name: "server", label: "Server", placeholder: "Pilih Server", required: true, type: "select", options: ["Asia", "America", "Europe", "TW/HK/MO"] }
@@ -110,7 +106,6 @@ const data = {
       creator: "Riot Games",
       category: "game",
       currency: "VP",
-      currencyIcon: "🎯",
       idFields: [
         { name: "riotId", label: "Riot ID", placeholder: "Username#TAG", required: true }
       ],
@@ -135,7 +130,6 @@ const data = {
       creator: "Tri Indonesia",
       category: "pulsa",
       currency: "Pulsa",
-      currencyIcon: "📱",
       idFields: [
         { name: "phoneNumber", label: "Nomor Telepon", placeholder: "Masukkan Nomor Telepon", required: true }
       ],
@@ -157,7 +151,6 @@ const data = {
       creator: "Telkomsel",
       category: "pulsa",
       currency: "Pulsa",
-      currencyIcon: "📱",
       idFields: [
         { name: "phoneNumber", label: "Nomor Telepon", placeholder: "Masukkan Nomor Telepon", required: true }
       ],
@@ -179,7 +172,6 @@ const data = {
       creator: "Indosat Ooredoo Hutchison",
       category: "pulsa",
       currency: "Pulsa",
-      currencyIcon: "📱",
       idFields: [
         { name: "phoneNumber", label: "Nomor Telepon", placeholder: "Masukkan Nomor Telepon", required: true }
       ],
@@ -203,7 +195,6 @@ const data = {
       creator: "PT Espay Debit Indonesia Koe",
       category: "emoney",
       currency: "Saldo",
-      currencyIcon: "💳",
       idFields: [
         { name: "accountNumber", label: "Nomor Akun", placeholder: "Masukkan Nomor Akun", required: true }
       ],
@@ -225,7 +216,6 @@ const data = {
       creator: "PT Visionet Internasional",
       category: "emoney",
       currency: "Saldo",
-      currencyIcon: "💳",
       idFields: [
         { name: "accountNumber", label: "Nomor Akun", placeholder: "Masukkan Nomor Akun", required: true }
       ],
@@ -247,7 +237,6 @@ const data = {
       creator: "PT Dompet Anak Bangsa",
       category: "emoney",
       currency: "Saldo",
-      currencyIcon: "💳",
       idFields: [
         { name: "accountNumber", label: "Nomor Akun", placeholder: "Masukkan Nomor Akun", required: true }
       ],
@@ -265,20 +254,21 @@ const data = {
     "Promo1": {
       ID: "1",
       title: "Diskon 10%",
-      description: "Dapatkan diskon 10% untuk pembelian pertama Anda.",
+      description: "Dapatkan diskon 10% untuk transaksi pilihan Anda.",
       code: "PROMO10",
-      validUntil: "2024-12-31",
+      validUntil: "2026-12-31",
       category: "diskon"
     },
     "Promo2": {
       ID: "2",
-      title: "Beli 1 Gratis 1",
-      description: "Beli satu produk, dapatkan satu gratis untuk kategori tertentu.",
-      code: "BUY1GET1",
-      validUntil: "2024-11-30",
+      title: "Potongan Rp 5.000",
+      description: "Potongan langsung Rp 5.000 untuk minimal transaksi.",
+      code: "HEMAT5RB",
+      discountAmount: 5000,
+      validUntil: "2026-12-31",
       category: "promo"
     }
   }
 };
 
-export default data ;
+export default data;
